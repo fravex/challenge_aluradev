@@ -1,12 +1,36 @@
 nav{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
     margin-bottom: 2.5rem;
+    gap: 1.8rem;
+}
+
+.top_bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 .nav_btns{
     display: flex;
+    gap: 1rem;
+}
+
+.menu_slide{
+    width: 50%;
+    min-height: 75vh;
+    padding: 1.25rem;
+    border-radius: 8px;
+    background-color: #2D415B;
+
+
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    
     gap: 1rem;
 }
 
@@ -16,4 +40,17 @@ nav{
 
 .nav_img_btn{
     height: 1.25rem;
+}
+
+.menu_item{
+    line-height: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu_item img{
+    border: .8rem solid var(--azul_3);
+    border-radius: 16px;
+    background-color: var(--azul_3);
 }
