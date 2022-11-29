@@ -8,7 +8,7 @@
 
 .main_textarea{
     background-color: var(--cinza_escuro);
-    background-image: url(/img/mac_buttons.png);
+    background-image: url(/img/buttons_bg.png);
     background-repeat: no-repeat;
     background-position-x: 1rem;
     background-position-y: 1rem;
