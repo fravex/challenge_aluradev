@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Home - AluraDev</title>
+</head>
+
+<body>
+    <nav>
+        <h1><img class="nav_img_logo" src="img/logo.png" alt="Logo AluraDev"></h1>
+        <div class="nav_btns">
+            <button><img class="nav_img_btn" src="img/btn_lupa.svg" alt="Lupa"></button>
+            <button><img class="nav_img_btn" src="img/btn_menu.svg" alt="Lupa"></button>
+        </div>
+
+        <!-- <ul>
+            <li>Menu</li>
+            <li>Editor de código</li>
+            <li>Comunidade</li>
+        </ul> -->
+    </nav>
+
+    <main>
+        <form>
+
+            <section>
+                <div class="card">
+                    <textarea class="main_textarea" name="" id="" rows="20">
+const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+
+const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
+
+const unfold = (f, seed) => {
+    const go = (f, seed, acc) => {
+    const res = f(seed)
+    return res ? go(f, res[1], acc.concat([res[0]])) : acc
+    }
+    return go(f, seed, [])
+}
+                        </textarea>
+                    <button class="card_btn">Visualizar com o highlight</button>
+                </div>
+            </section>
+
+            <section class="seu_projeto">
+                <h2>Seu projeto</h2>
+                <input type="text" placeholder="Nome do seu projeto">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição do seu projeto
+                "></textarea>
+            </section>
+
+            <section class="personalizacao">
+                <h2>Personalização</h2>
+                <select name="linguagem" id="linguagem">
+                    <option value="javascript">JavaScript</option>
+                    <option value="java">Java</option>
+                    <option value="html">HTML</option>
+                    <option value="css">Css</option>
+                </select>
+                <input class="input_cor" type="color" name="" id="" value="#6BD1FF">
+            </section>
+            <button class="btn_salvar_projeto" type="submit">Salvar projeto</button>
+        </form>
+
+
+    </main>
+
+
+</body>
+
+</html>

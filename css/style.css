@@ -1,0 +1,31 @@
+:root{
+    --azul_escuro: #051D3B;
+    --azul_3: #5081FB;
+    --azul_2: #7BA4FC;
+    --azul_claro: #96B9FD;
+    --branco: #FFFFFF;
+    --cinza_escuro: #141414;
+    --cinza_claro: rgba(255, 255, 255, 0.16);
+
+}
+
+body{
+    background: #051D3B;
+    margin: 2rem 1rem 0 1rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--branco);
+}
+
+button{
+    background: none ;
+    border: none;
+    cursor: pointer;
+}
+
+::placeholder {
+
+    color: var(--branco);
+    opacity: .6;
+    font-family: 'Inter', sans-serif;
+
+}

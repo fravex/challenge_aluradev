@@ -1,0 +1,113 @@
+/* CARD */
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main_textarea{
+    background-color: var(--cinza_escuro);
+    background-image: url(/img/mac_buttons.png);
+    background-repeat: no-repeat;
+    background-position-x: 1rem;
+    background-position-y: 1rem;
+    background-size: 3rem;
+    border: 1.5rem #6BD1FF solid;
+    border-radius: 8px;
+    color: var(--branco);
+    padding: 2rem 1rem;
+    outline: none;
+    line-height: 1rem;
+    
+}
+
+.card_btn, .btn_salvar_projeto{
+    color: var(--branco);
+    background: rgba(80, 129, 251, 0.08);
+    padding: 1.25rem 0;
+    border-radius: 8px;
+    line-height: 24px;
+}
+
+/* SEU PROJETO */
+
+.seu_projeto{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.seu_projeto h2{
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+
+}
+
+.seu_projeto input, .seu_projeto textarea{
+    background-color: var(--cinza_claro);
+    border: none;
+    border-radius: 8px;
+    min-height: 2rem;
+    outline: none;
+    color: var(--branco);
+    padding: 1rem .8rem 1rem .8rem;
+    line-height: 1.25rem;
+    font-size: 1rem;
+
+}
+
+
+/* PERSONALIZACAO */
+
+.personalizacao{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.personalizacao h2{
+    font-size: 0.75rem;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+
+}
+
+.personalizacao select, .personalizacao .input_cor {
+    background-color: var(--cinza_claro);
+    border: none;
+    border-radius: 8px;
+    min-height: 2rem;
+    outline: none;
+    color: var(--branco);
+    padding: 1rem .8rem 1rem .8rem;
+    line-height: 1.25rem;
+    font-size: 1rem;
+    opacity: 0.64;
+}
+
+.personalizacao select{
+    background: #2d415b;
+}
+
+.personalizacao .input_cor{
+    width: 100%;
+    min-height: 4rem;
+    padding: .5rem;
+    border: 1px solid var(--branco);
+    opacity: 100%;
+}
+
+.btn_salvar_projeto{
+    width: 100%;
+    background-color: var(--azul_3);
+    line-height: 24px;
+    color: #051D3B;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}

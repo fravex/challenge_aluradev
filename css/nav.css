@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+
+.nav_btns{
+    display: flex;
+    gap: 1rem;
+}
+
+.nav_img_logo{
+    height: 2rem;
+}
+
+.nav_img_btn{
+    height: 1.25rem;
+}
