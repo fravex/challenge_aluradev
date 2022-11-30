@@ -9,7 +9,6 @@ function menuFechar(){
 }
 
 function menuAbrir(){
-    main.style.display = 'none'
     menu_slide.style.display = 'block';
     btn_fechar.style.display = 'block';
     btn_menu.style.display = 'none'

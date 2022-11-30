@@ -19,15 +19,19 @@ nav{
 
 #btn_fechar{
     display: none;
+    margin-left: 2px;
 }
 
 .menu_slide{
     display: none;
+    position: absolute;
+    top: 6rem;
     width: 50%;
     min-height: 75vh;
     padding: 1.25rem;
     border-radius: 8px;
     background-color: #2D415B;
+    z-index: 100;
 }
 
 nav ul{
