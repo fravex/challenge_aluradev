@@ -17,14 +17,17 @@ nav{
     gap: 1rem;
 }
 
+#btn_fechar{
+    display: none;
+}
+
 .menu_slide{
+    display: none;
     width: 50%;
     min-height: 75vh;
     padding: 1.25rem;
     border-radius: 8px;
     background-color: #2D415B;
-
-
 }
 
 nav ul{
