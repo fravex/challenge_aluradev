@@ -1,5 +1,3 @@
-console.log();
-
 function menuFechar() {
     if (barra_busca.style.display == 'block'){
         barra_busca.style.display = 'none';
