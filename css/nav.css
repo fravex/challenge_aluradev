@@ -71,6 +71,20 @@ nav ul{
     gap: 1rem;
 }
 
+.foto_perfil{
+    width: 2rem;
+    border: none;
+}
+
+.menu_perfil{
+    margin-top: 1rem;
+    padding-top: 2rem;
+    border-top: 1px #ffffff14 solid;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 .menu_item img{
     border: .8rem solid var(--azul_3);
     border-radius: 16px;
