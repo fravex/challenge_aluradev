@@ -6,7 +6,7 @@
     gap: 2rem;
 }
 
-.main_textarea{
+.card_code{
     background-color: var(--cinza_escuro);
     background-image: url(/img/buttons_bg.png);
     background-repeat: no-repeat;
@@ -16,9 +16,11 @@
     border: 1.5rem #6BD1FF solid;
     border-radius: 8px;
     color: var(--branco);
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
     outline: none;
     line-height: 1rem;
+    white-space: pre-wrap;
+    height: 300px;
     
 }
 

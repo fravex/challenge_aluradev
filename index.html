@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/darcula.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
@@ -22,8 +23,8 @@
             <h1><img class="nav_img_logo" src="img/logo.png" alt="Logo AluraDev"></h1>
             <div class="nav_btns">
                 <button id="btn_busca"><img class="nav_img_btn" src="img/btn_lupa.svg" alt="Botão Lupa"></button>
-                <button id="btn_menu"><img class="nav_img_btn"  src="img/btn_menu.svg" alt="Botão Menu"></button>
-                <button id="btn_fechar"><img class="nav_img_btn"  src="img/btn_fechar.svg" alt="Botão fechar"></button>
+                <button id="btn_menu"><img class="nav_img_btn" src="img/btn_menu.svg" alt="Botão Menu"></button>
+                <button id="btn_fechar"><img class="nav_img_btn" src="img/btn_fechar.svg" alt="Botão fechar"></button>
             </div>
         </div>
         <div class="menu_slide">
@@ -56,20 +57,13 @@
 
             <section>
                 <div class="card">
-                    <textarea class="main_textarea" name="" id="" rows="20">
-const pluckDeep = key => obj => key.split('.').reduce((accum, key) => accum[key], obj)
+                    <code class="card_code" contenteditable="true">
+console.log()
+function editarCodigo(){
 
-const compose = (...fns) => res => fns.reduce((accum, next) => next(accum), res)
-
-const unfold = (f, seed) => {
-    const go = (f, seed, acc) => {
-    const res = f(seed)
-    return res ? go(f, res[1], acc.concat([res[0]])) : acc
-    }
-    return go(f, seed, [])
-}
-                        </textarea>
-                    <button class="card_btn">Visualizar com o highlight</button>
+}   
+                        </code>
+                    <button id="btn_visualiza_highlight" class="card_btn">Visualizar com o highlight</button>
                 </div>
             </section>
 
@@ -98,6 +92,9 @@ const unfold = (f, seed) => {
 
     <script src="js/menu.js"></script>
     <script src="js/cards.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="js/highlight.js"></script>
+    11
 </body>
 
 </html>
