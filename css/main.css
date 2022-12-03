@@ -26,11 +26,22 @@
 
 .card_btn, .btn_salvar_projeto{
     color: var(--branco);
-    background: rgba(80, 129, 251, 0.08);
+    background: var(--btn_escuro);
     padding: 1.25rem 0;
     border-radius: 8px;
     line-height: 24px;
 }
+
+.card_btn:hover{
+    background-color: rgba(80, 129, 251, 0.16);
+}
+
+.card_btn:active{
+    border: 4px solid rgba(80, 129, 251, 0.24);
+    padding: 1rem 0;
+
+}
+
 
 /* SEU PROJETO */
 
@@ -61,7 +72,6 @@
     font-size: 1rem;
 
 }
-
 
 /* PERSONALIZACAO */
 
@@ -107,9 +117,18 @@
 
 .btn_salvar_projeto{
     width: 100%;
-    background-color: var(--azul_3);
+    background-color: var(--btn_claro);
     line-height: 24px;
     color: #051D3B;
     font-size: 1rem;
     margin-bottom: 1rem;
+}
+
+.btn_salvar_projeto:hover{
+    background-color: var(--btn_claro_hover);
+}
+
+.btn_salvar_projeto:active{
+    border: 4px solid rgba(80, 129, 251, 0.72);
+    padding: 1rem 0;
 }

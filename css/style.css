@@ -1,11 +1,17 @@
 :root{
-    --azul_escuro: #051D3B;
-    --azul_3: #5081FB;
-    --azul_2: #7BA4FC;
-    --azul_claro: #96B9FD;
-    --branco: #FFFFFF;
-    --cinza_escuro: #141414;
+    --azul_escuro: rgba(5, 29, 59);
+    --azul_3: rgba(80, 129, 251);
+    --azul_2: rgba(123, 164, 252);
+    --azul_claro: rgb(150, 185, 253);
+    --branco: rgb(255, 255, 255);
+    --cinza_escuro: rgb(20, 20, 20);
     --cinza_claro: rgba(255, 255, 255, 0.16);
+
+    --btn_escuro: rgba(80, 129, 251, 0.08);
+    --btn_escuro_hover: rgba(80, 129, 251, 0.16):;
+
+    --btn_claro: rgb(80, 129, 251); 
+    --btn_claro_hover: rgb(123, 164, 252);
 
 }
 
@@ -17,10 +23,11 @@ body{
 }
 
 button{
-    background: none ;
     border: none;
     cursor: pointer;
+    background: none;
 }
+
 
 ::placeholder {
 
@@ -28,4 +35,16 @@ button{
     opacity: .6;
     font-family: 'Inter', sans-serif;
 
+}
+
+a:link {
+    text-decoration: inherit;
+    font-family: 'Inter', sans-serif;
+    color: var(--branco);
+}
+
+a:visited {
+    text-decoration: inherit;
+    font-family: 'Inter', sans-serif;
+    color: var(--branco);
 }

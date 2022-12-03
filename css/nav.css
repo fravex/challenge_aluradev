@@ -32,6 +32,21 @@ nav{
     gap: 1rem;
 }
 
+.nav_btns button{
+    padding: .75rem;
+    border-radius: 1rem;
+
+
+}
+
+.nav_btns button:hover{
+    background-color: var(--btn_escuro);
+}
+
+.nav_btns button:active{
+    background-color: var(--btn_escuro_hover);
+}
+
 #btn_fechar{
     display: none;
     margin-left: 2px;
