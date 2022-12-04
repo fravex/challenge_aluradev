@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/nav.css">
+    <link rel="stylesheet" href="/css/comunidade.css">
     <link rel="stylesheet" href="/css/main.css">
     <title>Comunidade - AluraDev</title>
 </head>
@@ -58,37 +59,65 @@
     </nav>
 
     <main class="main">
-        <form>
-
             <section>
                 <div class="card">
                     <code class="card_code" contenteditable="true" aria-placeholder="Digite seu código aqui">
-Digite seu código aqui:
+function sayHello(){
+
+    console.log('Hello World');
+
+}
+
+sayHello();
                     </code>
-                    <button id="btn_visualiza_highlight" class="card_btn">Visualizar com o highlight</button>
+                </div>
+            </section>
+            <section class="card_comunidade">
+                <h2>Título do projeto</h2>
+                <p>Essa é a descrição do meu projeto.</p>
+                <div class="card_comunidade_footer">
+                    <div>
+                        <img src="/img/balao_comuidade.svg" alt="" srcset="">
+                        <span>9</span>
+                        <img src="/img/coracao_comunidade.svg"  alt="" srcset="">
+                        <span>9</span>
+                    </div>
+                    <div class="perfil">
+                        <img src="/img/foto_perfil.png" alt="" srcset="" style="width: 1.25rem ;">
+                        <span>@Harry</span>
+                    </div>
                 </div>
             </section>
 
-            <section class="seu_projeto">
-                <h2>Seu projeto</h2>
-                <input type="text" placeholder="Nome do seu projeto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição do seu projeto
-                "></textarea>
-            </section>
+            <section>
+                <div class="card">
+                    <code class="card_code "  style="border: #FF6BCD 1.5rem solid;" contenteditable="true" aria-placeholder="Digite seu código aqui">
+function sayHello(){
 
-            <section class="personalizacao">
-                <h2>Personalização</h2>
-                <select name="linguagem" id="linguagem">
-                    <option value="css">CSS</option>
-                    <option value="javascript">JavaScript</option>
-                    <option value="java">Java</option>
-                    <option value="html">HTML</option>
-                </select>
-                <input class="input_cor" type="color" name="" id="" value="#6BD1FF">
-            </section>
-            <button class="btn_salvar_projeto" type="submit">Salvar projeto</button>
-        </form>
+    console.log('Hello World');
 
+}
+
+sayHello();
+                    </code>
+                </div>
+            </section>
+            <section class="card_comunidade">
+                <h2>Título do projeto</h2>
+                <p>Essa é a descrição do meu projeto.</p>
+                <div class="card_comunidade_footer">
+                    <div>
+                        <img src="/img/balao_comuidade.svg" alt="" srcset="">
+                        <span>9</span>
+                        <img src="/img/coracao_comunidade.svg"  alt="" srcset="">
+                        <span>9</span>
+                    </div>
+                    <div class="perfil">
+                        <img src="/img/foto_perfil.png" alt="" srcset="" style="width: 1.25rem ;">
+                        <span>@Harry</span>
+                    </div>
+                </div>
+            </section>
 
     </main>
 

@@ -1,0 +1,35 @@
+.card_comunidade {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    background: rgba(0, 0, 0, 0.16);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.card_comunidade h2 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+}
+
+.card_comunidade p {
+    font-size: 1rem;
+    line-height: 24px;
+    color: #cdd1d6;
+}
+
+.card_comunidade_footer{
+    margin-top: .5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 0 1rem;
+}
+
+.card_comunidade_footer .perfil{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
