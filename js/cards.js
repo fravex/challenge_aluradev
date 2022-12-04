@@ -7,7 +7,5 @@ input_cor.addEventListener('change', (e)=>{
 });
 
 
-card_projeto.addEventListener('click', ()=>{
-    card_code.textContent = ''
-})
+
 

@@ -149,3 +149,32 @@
         gap: 1rem;
     }
   }
+
+  /* DESKTOP CONFIG */
+  @media only screen and (min-width:720px) {
+    body{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .form_card{
+        display: flex;
+        gap: 2rem;
+    }
+    nav{
+        width: 20vw;
+    }
+
+    .card_btn_highlight{
+        width: 60vw;
+    }
+
+    .projeto_personalizacao{
+        width: 20vw;
+
+    }
+    .linguagem_cor_borda{
+        display: flex;
+        flex-direction: column;
+    }
+  }

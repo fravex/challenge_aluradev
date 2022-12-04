@@ -48,3 +48,11 @@ a:visited {
     font-family: 'Inter', sans-serif;
     color: var(--branco);
 }
+
+a:hover {
+    opacity: 64%;
+}
+
+a:active {
+    opacity: 100%;
+}

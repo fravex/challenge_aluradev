@@ -29,10 +29,10 @@
         </div>
         <div class="menu_slide">
             <ul>
-                <!-- <li>Menu</li> -->
+                <li><h2 class="menu_titulo">Menu</h2></li>
                 <li>
                     <a href="/index.html">
-                        <div class="menu_item" style="opacity: 40%;">
+                        <div class="menu_item">
                             <img src="/img/icon_edit_codigo.svg" alt="Icone editor de código">
                             Editor de código
                         </div>
@@ -40,7 +40,7 @@
 
                 </li>
                 <li>
-                    <a href="comunidade.html">
+                    <a href="pages/comunidade.html">
                         <div class="menu_item">
                             <img src="/img/icon_comunidade.svg" alt="Icone editor de código">
                             Comunidade
@@ -58,9 +58,9 @@
     </nav>
 
     <main class="main">
-        <form>
+        <form class="form_card">
 
-            <section>
+            <section class="card_btn_highlight">
                 <div class="card">
                     <code class="card_code" contenteditable="true" aria-placeholder="Digite seu código aqui">
 
@@ -69,30 +69,32 @@
                 </div>
             </section>
 
-            <section class="seu_projeto">
-                <h2>Seu projeto</h2>
-                <input type="text" placeholder="Nome do seu projeto">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Descrição do seu projeto
-                "></textarea>
-            </section>
 
-            <section class="personalizacao">
-                <h2>Personalização</h2>
-                <div class="linguagem_cor_borda">
-                    <select name="linguagem" id="linguagem">
-                        <option value="css">CSS</option>
-                        <option value="javascript">JavaScript</option>
-                        <option value="java">Java</option>
-                        <option value="html">HTML</option>
-                    </select>
-                    <input class="input_cor" type="color" name="" id="" value="#6BD1FF">
+            <section class="projeto_personalizacao">
+                <div class="seu_projeto">
+                    <h2>Seu projeto</h2>
+                    <input type="text" placeholder="Nome do seu projeto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Descrição do seu projeto
+                        "></textarea>
                 </div>
+                <div class="personalizacao">
+                    <h2>Personalização</h2>
+                    <div class="linguagem_cor_borda">
+                        <select name="linguagem" id="linguagem">
+                            <option value="css">CSS</option>
+                            <option value="javascript">JavaScript</option>
+                            <option value="java">Java</option>
+                            <option value="html">HTML</option>
+                        </select>
+                        <input class="input_cor" type="color" name="" id="" value="#6BD1FF">
+                    </div>
+                    <button class="btn_salvar_projeto" type="submit">Salvar projeto</button>
             </section>
-            <button class="btn_salvar_projeto" type="submit">Salvar projeto</button>
+
+            </div>
         </form>
-
-
     </main>
+    
 
     <script src="js/menu.js"></script>
     <script src="js/cards.js"></script>
