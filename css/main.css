@@ -95,6 +95,7 @@
     border: none;
     border-radius: 8px;
     min-height: 2rem;
+    width: 100%;
     outline: none;
     color: var(--branco);
     padding: 1rem .8rem 1rem .8rem;
@@ -132,3 +133,19 @@
     border: 4px solid rgba(80, 129, 251, 0.72);
     padding: 1rem 0;
 }
+
+.linguagem_cor_borda{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+
+/* TABLET CONFIG */
+@media only screen and (min-width:450px) {
+    .linguagem_cor_borda{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+  }

@@ -20,7 +20,7 @@ nav{
     border: none;
     border-radius: 8px;
     min-height: 1rem;
-    width: 287px;
+    width: 100%;
     outline: none;
     color: var(--branco);
     padding: .7rem 1rem .7rem 1rem;
@@ -105,3 +105,11 @@ nav ul{
     border-radius: 16px;
     background-color: var(--azul_3);
 }
+
+
+/* TABLET CONFIG */
+@media only screen and (min-width:450px) {
+    .nav_busca{
+        margin-left: 1rem;
+    }
+  }

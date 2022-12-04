@@ -23,7 +23,9 @@ function menuAbrir() {
 function exibeBusca() {
     btn_fechar.style.display = 'block';
     btn_menu.style.display = 'none';
-    imagem_logo.style.display = 'none';
+    if (window.innerWidth < 450){
+        imagem_logo.style.display = 'none';
+    }
     btn_busca.style.display = 'none';
     barra_busca.style.display = 'block';
     menu_slide.style.display = 'none';

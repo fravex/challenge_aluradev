@@ -20,8 +20,8 @@
 <body>
     <nav>
         <div class="top_bar">
-            <input type="text" class="nav_busca" placeholder="Busque por algo">
             <h1><img class="nav_img_logo" src="/img/logo.png" alt="Logo AluraDev"></h1>
+            <input type="text" class="nav_busca" placeholder="Busque por algo">
             <div class="nav_btns">
                 <button id="btn_busca"><img class="nav_img_btn" src="/img/btn_lupa.svg" alt="Botão Lupa"></button>
                 <button id="btn_menu"><img class="nav_img_btn" src="/img/btn_menu.svg" alt="Botão Menu"></button>
@@ -96,6 +96,41 @@ sayHello();
         <section>
             <div class="card">
                 <code class="card_code " style="border: #FF6BCD 1.5rem solid;" contenteditable="true"
+                    aria-placeholder="Digite seu código aqui">
+function sayHello(){
+
+    console.log('Hello World');
+
+}
+
+sayHello();
+                    </code>
+            </div>
+        </section>
+        <section class="card_comunidade">
+            <h2>Título do projeto</h2>
+            <p>Essa é a descrição do meu projeto.</p>
+            <div class="card_comunidade_footer">
+                <div class="likes_comentarios">
+                    <button>
+                        <img src="/img/balao_comuidade.svg" alt="" srcset="">
+                        <span>9</span>
+                    </button>
+                    <button>
+                        <img src="/img/coracao_comunidade_colorido.svg" alt="" srcset="">
+                        <span>9</span>
+                    </button>
+                </div>
+                <div class="perfil">
+                    <img src="/img/foto_perfil.png" alt="" srcset="" style="width: 1.25rem ;">
+                    <span>@Harry</span>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="card">
+                <code class="card_code " style="border: #ff9a6b 1.5rem solid;" contenteditable="true"
                     aria-placeholder="Digite seu código aqui">
 function sayHello(){
 
