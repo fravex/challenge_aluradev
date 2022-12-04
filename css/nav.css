@@ -91,6 +91,12 @@ nav ul {
     display: flex;
     align-items: center;
     gap: 1rem;
+
+}
+
+li:nth-child(3){
+    padding-bottom: 2rem;
+    border-bottom: 1px #ffffff14 solid;
 }
 
 .foto_perfil {
@@ -99,13 +105,19 @@ nav ul {
 }
 
 .menu_perfil {
-    margin-top: 1rem;
-    padding-top: 2rem;
-    border-top: 1px #ffffff14 solid;
+    padding: .5rem 1rem;
     display: flex;
     align-items: center;
     gap: 1rem;
+    width: fit-content;
+    border-radius: 8px;
 }
+
+.menu_perfil:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.08);
+}
+
 
 .menu_item img {
     border: .8rem solid var(--azul_3);
