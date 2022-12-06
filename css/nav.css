@@ -141,6 +141,10 @@ li:nth-child(3){
     #btn_menu {
         display: none;
     }
+    
+    #btn_fechar {
+        display: none;
+    }
 
     .menu_titulo {
         display: block;

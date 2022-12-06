@@ -61,3 +61,26 @@
     gap: .8rem;
     padding: .5rem;
 }
+
+
+  /* DESKTOP CONFIG */
+  @media only screen and (min-width:720px) {
+    .main_comunidade{
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .main_comunidade section{
+        width: 35vw;
+    }
+
+    .card_comunidade_footer{
+        cursor: pointer;
+    }
+
+    .card, .card_comunidade{
+        cursor: pointer;
+    }
+ 
+  }
