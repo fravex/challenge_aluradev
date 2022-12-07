@@ -23,9 +23,10 @@
 .card_comunidade_footer {
     margin-top: .5rem;
     align-items: center;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding: 0 2rem 0 1rem;
+    transition: all 2s;
 }
 
 .likes_comentarios{
