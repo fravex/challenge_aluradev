@@ -58,13 +58,17 @@
     </nav>
 
     <main class="main">
-        <form class="form_card">
+        <form class="form_card" id="formulario_projeto">
 
             <section class="card_btn_highlight">
                 <div class="card">
-                    <code class="card_code" contenteditable="true" aria-placeholder="Digite seu código aqui">
+                    <code class="card_code" id="codigo_projeto" contenteditable="true" aria-placeholder="Digite seu código aqui">    function sayHello(){
 
-                    </code>
+        console.log('Hello World');
+
+        }
+
+    sayHello();</code>
                     <button id="btn_visualiza_highlight" class="card_btn">Visualizar com o highlight</button>
                 </div>
             </section>
@@ -73,9 +77,9 @@
             <section class="projeto_personalizacao">
                 <div class="seu_projeto">
                     <h2>Seu projeto</h2>
-                    <input type="text" placeholder="Nome do seu projeto">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Descrição do seu projeto
-                        "></textarea>
+                    <input type="text" id="nome_projeto" placeholder="Nome do seu projeto" value="Primeiro Projeto">
+                    <textarea name="" id="descricao_projeto" cols="30" rows="10" placeholder="Descrição do seu projeto
+                        ">Meu primeiro projeto em CSS</textarea>
                 </div>
                 <div class="personalizacao">
                     <h2>Personalização</h2>
@@ -86,9 +90,9 @@
                             <option value="java">Java</option>
                             <option value="html">HTML</option>
                         </select>
-                        <input class="input_cor" type="color" name="" id="" value="#6BD1FF">
+                        <input class="input_cor" id="cor_borda"type="color" name="" id="" value="#6BD1FF">
                     </div>
-                    <button class="btn_salvar_projeto" type="submit">Salvar projeto</button>
+                    <button class="btn_salvar_projeto" id="salvar_projeto" type="submit">Salvar projeto</button>
             </section>
 
             </div>
@@ -100,6 +104,7 @@
     <script src="js/cards.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
     <script src="js/highlight.js"></script>
+    <script src="js/local_storage.js"></script>
 </body>
 
 </html>
