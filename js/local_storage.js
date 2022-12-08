@@ -7,7 +7,12 @@ const descricao_projeto = formulario_codigo.elements['descricao_projeto'];
 const linguagem_codigo = formulario_codigo.elements['linguagem'];
 const cor_borda = formulario_codigo.elements['cor_borda'];
 
-let dados_projeto = {}
+if(localStorage.dados_projetos){
+    var lista_projetos = JSON.parse(localStorage.dados_projetos);
+}
+else{
+    var lista_projetos = [];
+}
 
 botao_salvar_projeto.addEventListener('click', (e)=>{
     e.preventDefault();
@@ -25,9 +30,10 @@ function salvaProjeto(codigo_projeto, nome_projeto, descricao_projeto, linguagem
         "cor_borda": cor_borda.value
     }
 
+    lista_projetos.push(dados_projeto)
+    console.log(lista_projetos)
 
-    console.log(dados_projeto);
-    localStorage.setItem("dados_projetos" , JSON.stringify(dados_projeto)) ;
+    localStorage.setItem("dados_projetos" , JSON.stringify(lista_projetos)) ;
 }
 
 

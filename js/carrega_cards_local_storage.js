@@ -1,22 +1,24 @@
 main_comunidade = document.getElementsByClassName('main_comunidade')[0]
-card_section = document.createElement('section')
-card_section.setAttribute("id", "card_3")
 
 const dados_projeto_local_storage = localStorage.dados_projetos;
 dados_projeto_JSON = JSON.parse(dados_projeto_local_storage)
 
-card_section.innerHTML = `
+function criaElementos(projeto, index){
+    console.log(index)
+    card_section = document.createElement('section')
+    card_section.setAttribute("id", `card_${index+1}`)
+    card_section.innerHTML = `
 <div>
     <div class="card">
-        <code class="card_code" style="border: ${dados_projeto_JSON.cor_borda} 1.5rem solid;" contenteditable="false"
+        <code class="card_code" style="border: ${projeto.cor_borda} 1.5rem solid;" contenteditable="false"
             aria-placeholder="Digite seu código aqui">
-${dados_projeto_JSON.codigo_projeto}
+${projeto.codigo_projeto}
             </code>
     </div>
 </div>
 <div class="card_comunidade">
-    <h2>${dados_projeto_JSON.nome_projeto}</h2>
-    <p>${dados_projeto_JSON.descricao_projeto}</p>
+    <h2>${projeto.nome_projeto}</h2>
+    <p>${projeto.descricao_projeto}</p>
     <div class="card_comunidade_footer">
         <div class="likes_comentarios">
             <button>
@@ -35,5 +37,12 @@ ${dados_projeto_JSON.codigo_projeto}
     </div>
 </div>
 `
+    main_comunidade.appendChild(card_section)
 
-main_comunidade.appendChild(card_section)
+}
+
+
+dados_projeto_JSON.forEach(criaElementos);
+
+
+
