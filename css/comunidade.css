@@ -26,7 +26,8 @@
     display: none;
     justify-content: space-between;
     padding: 0 2rem 0 1rem;
-    transition: all 2s;
+    transition: 2s;
+
 }
 
 .likes_comentarios{
@@ -74,6 +75,7 @@
 
     .main_comunidade section{
         width: 35vw;
+        height: 610px;
     }
 
     .card_comunidade_footer{

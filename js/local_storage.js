@@ -27,7 +27,9 @@ function salvaProjeto(codigo_projeto, nome_projeto, descricao_projeto, linguagem
         "nome_projeto": nome_projeto.value,
         "descricao_projeto": descricao_projeto.value,
         "linguagem": linguagem_codigo.value,
-        "cor_borda": cor_borda.value
+        "cor_borda": cor_borda.value,
+        "quantidade_likes": 15,
+        "like": false
     }
 
     lista_projetos.push(dados_projeto)
