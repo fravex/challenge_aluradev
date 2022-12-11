@@ -1,6 +1,6 @@
 # challenge_aluradev
 
-Link projeto:
+Projeto concluído:
 https://steady-cassata-ac43bf.netlify.app/
 
 Projeto desenvolvido durante o Alura Challenge 2 - Front-End
