@@ -71,10 +71,11 @@
         display: flex;
         gap: 2rem;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .main_comunidade section{
-        width: 35vw;
+        width: 32vw;
         height: 610px;
     }
 
