@@ -1,3 +1,5 @@
+
+
 const formulario_codigo = document.getElementById('formulario_projeto')
 const botao_salvar_projeto = document.getElementById('salvar_projeto')
 
@@ -20,7 +22,11 @@ else{
 botao_salvar_projeto.addEventListener('click', (e)=>{
     e.preventDefault();
     salvaProjeto(codigo_projeto, nome_projeto, descricao_projeto, linguagem, cor_borda);
-    abreModal();
+    Swal.fire(
+        'Parabéns!',
+        'Seu projeto foi salvo com sucesso!',
+        'success'
+      )
 })
 
 
