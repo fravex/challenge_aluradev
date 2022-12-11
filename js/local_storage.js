@@ -6,6 +6,9 @@ const nome_projeto = formulario_codigo.elements['nome_projeto'];
 const descricao_projeto = formulario_codigo.elements['descricao_projeto'];
 const linguagem_codigo = formulario_codigo.elements['linguagem'];
 const cor_borda = formulario_codigo.elements['cor_borda'];
+const modal = document.getElementById('modal');
+const btn_fecha_modal = document.getElementById('fecha_modal');
+const main_editor_codigo = document.getElementById('main');
 
 if(localStorage.dados_projetos){
     var lista_projetos = JSON.parse(localStorage.dados_projetos);
@@ -17,6 +20,7 @@ else{
 botao_salvar_projeto.addEventListener('click', (e)=>{
     e.preventDefault();
     salvaProjeto(codigo_projeto, nome_projeto, descricao_projeto, linguagem, cor_borda);
+    abreModal();
 })
 
 
@@ -40,3 +44,18 @@ function salvaProjeto(codigo_projeto, nome_projeto, descricao_projeto, linguagem
 
 
 
+function fecharModal(){
+    modal.style.display = 'none'
+    main_editor_codigo.style.opacity = '100%'
+
+}
+
+function abreModal(){
+    modal.style.display = 'flex'
+    main_editor_codigo.style.opacity = '25%'
+    window.scrollTo(0, 0)
+
+}
+
+
+fecha_modal.addEventListener('click', fecharModal)
